@@ -75,3 +75,13 @@ object placa {
 	method peso() { return peso }
 	method peso(pesoNuevo) { peso = pesoNuevo }
 }
+
+object cajita {
+	var objetoEnCaja
+	
+	method color() { return rojo }
+	method material() { return cobre}
+	method cargaObjeto(objeto) { objetoEnCaja = objeto }
+	method peso() { return 400 + objetoEnCaja.peso() }
+	
+}
